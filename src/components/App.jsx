@@ -26,8 +26,7 @@ const App = (props) => {
 
    function changeColor(color) {
       if (checkColor(color)) {
-         color = fixColor(color);
-         setColor(color);
+         setColor(fixColor(color));
          setIsWarning(false);
          setResult(convertHEX(color));
       } else {
